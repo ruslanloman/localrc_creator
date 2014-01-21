@@ -92,7 +92,7 @@ export BASE=${BASE_DIR:-"/opt/stack"}
 
 function user_create()
 {
-sudo mkdir $BASE
+sudo mkdir -p $BASE
 sudo useradd -U -s /bin/bash -d $BASE -m stack
 TEMPFILE=`mktemp`
 echo "stack ALL=(root) NOPASSWD:ALL" >$TEMPFILE
