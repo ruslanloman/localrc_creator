@@ -99,7 +99,7 @@ echo "stack ALL=(root) NOPASSWD:ALL" >$TEMPFILE
 chmod 0440 $TEMPFILE
 sudo chown root:root $TEMPFILE
 sudo mv $TEMPFILE /etc/sudoers.d/50_stack_sh
-chown stack:stack -R /opt/stack
+sudo chown stack:stack -R /opt/stack
 }
 
 function setup_localrc() {
