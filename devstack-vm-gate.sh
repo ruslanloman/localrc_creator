@@ -93,7 +93,9 @@ export BASE=${BASE_DIR:-"/opt/stack"}
 function user_create()
 {
 sudo mkdir -p $BASE
+if ! grep 'stack' /etc/passwd &>/dev/null; then
 sudo useradd -U -s /bin/bash -d $BASE -m stack
+fi
 TEMPFILE=`mktemp`
 echo "stack ALL=(root) NOPASSWD:ALL" >$TEMPFILE
 chmod 0440 $TEMPFILE
