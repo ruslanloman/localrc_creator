@@ -305,5 +305,18 @@ EOF
         echo "FORCE_CONFIG_DRIVE=False" >>localrc
     fi
 }
+
+function clone_run_devstack()
+{
+        git clone https://github.com/openstack-dev/devstack.git ${BASE}
+        cd ${BASE}
+        git checkout -b ${LOCALRC_BRANCH}  origin/${LOCALRC_BRANCH}
+}
+
+
 user_create
+clone_run_devstack
 setup_localrc
+
+echo "Running devstack"
+sudo -H -u stack ./stack.sh
