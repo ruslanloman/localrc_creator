@@ -19,9 +19,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #put to job export 
-DEVSTACK_GATE_TEMPEST=1 #//tempest
-DEVSTACK_GATE_NEUTRON=1 #// Neutron
-LOCALRC_BRANCH="stable/havana"
+export LOCALRC_BRANCH=${BRANCH:-"master"}
 
 export DEVSTACK_GATE_TEMPEST=${DEVSTACK_GATE_TEMPEST:-0}
 
@@ -61,7 +59,7 @@ export DEVSTACK_CINDER_SECURE_DELETE=${DEVSTACK_CINDER_SECURE_DELETE:-0}
 
 # Set to 1 to run neutron instead of nova network
 # Only applicable to master branch
-export DEVSTACK_GATE_NEUTRON=${DEVSTACK_GATE_NEUTRON:-0}
+export DEVSTACK_GATE_NEUTRON=${DEVSTACK_GATE_NEUTRON:-1}
 
 # Set to 1 to run nova in cells mode instead of the default mode
 export DEVSTACK_GATE_CELLS=${DEVSTACK_GATE_CELLS:-0}
