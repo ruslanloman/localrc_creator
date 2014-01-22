@@ -310,9 +310,9 @@ EOF
 
 function clone_run_devstack()
 {
-        git clone https://github.com/openstack-dev/devstack.git ${BASE}
+        sudo git clone https://github.com/openstack-dev/devstack.git ${BASE}
         cd ${BASE}
-        git checkout -b ${LOCALRC_BRANCH}  origin/${LOCALRC_BRANCH}
+        sudo git checkout -b ${LOCALRC_BRANCH}  origin/${LOCALRC_BRANCH}
 }
 
 
