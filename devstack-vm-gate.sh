@@ -19,7 +19,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #put to job export 
-export LOCALRC_BRANCH=${BRANCH:-"master"}
+export LOCALRC_BRANCH=${BRANCH}
 
 export DEVSTACK_GATE_TEMPEST=${DEVSTACK_GATE_TEMPEST:-0}
 
