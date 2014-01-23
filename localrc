@@ -36,3 +36,74 @@ LOG_COLOR=False
 CINDER_SECURE_DELETE=False
 USE_SCREEN=False
 FORCE_CONFIG_DRIVE=always
+#case "$GERRIT_PROJECT" in
+#
+# "openstack/nova" )
+# NOVA_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/ceilometer" )
+# CEILOMETER_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/cinder" )
+# CINDER_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/glance" )
+# GLANCE_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/heat" )
+# HEAT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/horizon" )
+# HORIZON_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/keystone" )
+# KEYSTONE_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-ceilometerclient" )
+#  CEILOMETERCLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-cinderclient" )
+#  CINDERCLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-glanceclient" )
+#  GLANCECLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-heatclient" )
+#  HEATCLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-keystoneclient" )
+#  KEYSTONECLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-novaclient" )
+#  NOVACLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-swiftclient" )
+#  SWIFTCLIENT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/python-swift" )
+#  SWIFT_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/quantum" )
+#  QUANTUM_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+# "openstack/tempest" )
+#  TEMPEST_BRANCH=$GERRIT_REFSPEC
+# ;;
+#
+#esac
