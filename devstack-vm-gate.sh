@@ -21,7 +21,7 @@
 #put to job export 
 export LOCALRC_BRANCH="stable/havana"
 
-export DEVSTACK_GATE_TEMPEST=${DEVSTACK_GATE_TEMPEST:-0}
+export DEVSTACK_GATE_TEMPEST=${DEVSTACK_GATE_TEMPEST:-1}
 
 # Set to 1 to run the devstack exercises
 export DEVSTACK_GATE_EXERCISES=${DEVSTACK_GATE_EXERCISES:-0}
